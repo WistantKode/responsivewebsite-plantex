@@ -8,18 +8,17 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 152;
-  --first-color: hsl(var(--hue), 24%, 32%);
-  --first-color-alt: hsl(var(--hue), 24%, 28%);
-  --first-color-light: hsl(var(--hue), 24%, 66%);
-  --first-color-lighten: hsl(var(--hue), 24%, 92%);
-  --title-color: hsl(var(--hue), 4%, 15%);
-  --text-color: hsl(var(--hue), 4%, 35%);
-  --text-color-light: hsl(var(--hue), 4%, 55%);
-  --body-color: hsl(var(--hue), 0%, 100%);
-  --container-color: #FFF;
+  --first-color: #295943;              /* hsl(152, 24%, 32%) */
+  --first-color-alt: #234c39;          /* hsl(152, 24%, 28%) */
+  --first-color-light: #7fc7a3;        /* hsl(152, 24%, 66%) */
+  --first-color-lighten: #f3faf7;      /* hsl(152, 24%, 92%) */
+  --title-color: #232623;              /* hsl(152, 4%, 15%) */
+  --text-color: #5a5e5a;               /* hsl(152, 4%, 35%) */
+  --text-color-light: #8c918c;         /* hsl(152, 4%, 55%) */
+  --body-color: #ffffff;               /* hsl(152, 0%, 100%) */
+  --container-color: #ffffff;          /* #FFF */
 
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Outfit', sans-serif;
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -34,7 +33,6 @@
   --font-semi-bold: 600;
 
   /*========== Margenes Bottom ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --mb-0-5: .5rem;
   --mb-0-75: .75rem;
   --mb-1: 1rem;
@@ -113,11 +111,11 @@ img{
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
-  --first-color-dark: hsl(var(--hue), 8%, 20%);
-  --title-color: hsl(var(--hue), 4%, 95%);
-  --text-color: hsl(var(--hue), 4%, 75%);
-  --body-color: hsl(var(--hue), 8%, 12%);
-  --container-color: hsl(var(--hue), 8%, 16%);
+  --first-color-dark: #353a36;         /* hsl(152, 8%, 20%) */
+  --title-color: #f2f2f2;              /* hsl(152, 4%, 95%) */
+  --text-color: #bfbfbf;               /* hsl(152, 4%, 75%) */
+  --body-color: #1c1e1a;               /* hsl(152, 8%, 12%) */
+  --container-color: #232623;          /* hsl(152, 8%, 16%) */
 }
 
 /*========== Button Dark/Light ==========*/
@@ -781,6 +779,16 @@ the website, in dark theme
 .footer__social{
   display: inline-flex;
   column-gap: .75rem;
+}
+.footer__social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: .25rem;
+  transition: .3s;
+  font-size: 2.5rem;
 }
 
 .footer__social-link{
